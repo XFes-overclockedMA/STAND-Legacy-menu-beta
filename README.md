@@ -1,6 +1,8 @@
 # STAND-Legacy-menu-beta
 This Legacy menu beta THEME for STAND
 
+![LogoL](https://user-images.githubusercontent.com/130534944/231552547-59c2d8d4-9048-467c-86ac-0dae4223d84b.png)
+
 ⚠️⚠️THIS CODE IS OPEN SOURCE PROVIDED YOU ASK ME PERMISSION⚠️⚠️
 
 🚧🚧🚧🚧🚧🚧
@@ -14,7 +16,8 @@ Powered by :  разогнанный = OverclockedMA / @разогнанный#9
 🚧🚧🚧🚧🚧🚧
 
 I also made the Theme Superior V for even more nostalgia👌
-💎 Superior V : Github link cooming soon please look on STAND server discord
+💎 Superior V : 
+https://github.com/XFes-overclockedMA/STAND-SuperiorV
 
 🚧🚧🚧🚧🚧🚧
 
@@ -36,3 +39,5 @@ Good game  😉🚀🎮
 
 Powered by :  разогнанный = OverclockedMA / @разогнанный#9036 ✅
 💻 Demo : https://youtu.be/Yq5zVxSOC2I
+
+![LegacyStand](https://user-images.githubusercontent.com/130534944/231552575-4c6dc18b-131d-4d0a-bb14-4e7122342784.png)
