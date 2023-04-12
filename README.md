@@ -15,9 +15,13 @@ Powered by :  разогнанный = OverclockedMA / @разогнанный#9
 
 🚧🚧🚧🚧🚧🚧
 
-I also made the Theme Superior V for even more nostalgia👌
+I also made Theme for even more nostalgia👌
+
 💎 Superior V : 
 https://github.com/XFes-overclockedMA/STAND-SuperiorV
+
+💎 The Purge V3.9 Reforged :
+https://github.com/XFes-overclockedMA/STAND-ThePurgeReforged.git
 
 🚧🚧🚧🚧🚧🚧
 
