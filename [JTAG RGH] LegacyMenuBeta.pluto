@@ -1,0 +1,327 @@
+------------------------------------------------------------------------------------------------------------------------------
+--                                                                                                                          --
+--Beyond 5D  Who gave me the idea given that he had already made a version thank you very much to him!!                     --
+--I also recommend the two themes posted by Grampa  : "The Purge V3.9" and "African Engine", for even more nostalgia        --
+--                                                                                                                          --
+--Version:                                                                                                                  --
+--0.4                                                                                                                       --
+--Build Date:                                                                                                               --
+--14/11/23                                                                                                                  --
+-----powered By = разогнанный = OverclockedMA                                                                               --
+------------------------------------------------------------------------------------------------------------------------------
+-- LEGACY MENU BETA <3                                                                                                      --
+-- Welcome on my CODE                                                                                                       --  
+-- This OPEN SOURCE PROVIDED YOU MENTION ME IN YOUR PROJECTS                                                                --  
+--> Thanks :) <3                                                                                                            --
+------------------------------------------------------------------------------------------------------------------------------
+
+util.keep_running()
+util.require_natives("natives-1676318796")
+-----------------------------------------------------------------------------------------------
+---------------RESSOURCE REPERTORY
+local check1_resources = filesystem.resources_dir() .. '#xfes-lib-theme\\legacymenu\\loading\\legacybanner.png'
+local check2_resources = filesystem.resources_dir() .. '#xfes-lib-theme\\legacymenu\\loading\\loadachivement.png'
+local header_path = filesystem.resources_dir() .. '#xfes-lib-theme\\legacymenu\\legacyheader\\h1.png'
+local function get_header_path(i)
+	return filesystem.resources_dir() .. '#xfes-lib-theme\\legacymenu\\legacyheader\\h' .. i .. '.png'
+end
+
+-----------------------------------------------------------------------------------------------
+---------------CHECK RESSOURCE FILE
+if not io.exists(check1_resources) then
+    util.toast('[LegacyMenu] legacybanner.png not found!')
+    util.stop_script()
+end
+
+if not io.exists(check2_resources) then
+    util.toast('[LegacyMenu] loadachivement.png not found!')
+    util.stop_script()
+end
+
+for i = 1, 45 do
+	if not io.exists(get_header_path(i)) then
+		util.toast('[xfes-lib-theme] Legacy Header ' .. i .. ' not found!')
+		util.stop_script()
+	end
+end
+-----------------------------------------------------------------------------------------------------------------------------------
+--------------- NOTIFY LAUNCH LEGACY.PLUTO
+util.toast("Hi, " .. players.get_name(players.user()) .. "! \nWelcome To Legacy menu beta - Theme !")
+-----------------------------------------------------------------------------------------------------------------------------------
+---------------SPLASH SCREEN REPERTORY
+LG_Load = filesystem.resources_dir() .. "#xfes-lib-theme\\legacymenu\\"
+
+legacyloading = {
+    Img = LG_Load .. "loading\\",
+}
+-----------------------------------------------------------------------------------------------------------------------------------
+--------------- LOAD SPLASH IMG
+function SHOW_IMG(img_name, max_passed_time)----------------------------------------------Credit goes to LanceScript Reloaded (THANKS, LanceScript Team :) <3 )
+    if filesystem.exists(legacyloading.Img .. img_name) then
+        local ImgAlpha = 0
+        local IncreasedImgAlpha = 0.01
+        util.create_tick_handler(function()
+            ImgAlpha = ImgAlpha + IncreasedImgAlpha
+            if ImgAlpha > 1 then
+                ImgAlpha = 1
+            elseif ImgAlpha < 0 then 
+                ImgAlpha = 0
+                return false
+            end
+        end)
+
+        local Img = directx.create_texture(legacyloading.Img .. img_name)
+        local StartedTime = os.clock()
+        util.create_tick_handler(function()
+            directx.draw_texture(Img, 0.07, 0.07, 0.5, 0.5, 0.5, 0.5, 0, 1, 1, 1, ImgAlpha)
+            local PassedTime = os.clock() - StartedTime
+            if PassedTime > max_passed_time then
+                IncreasedImgAlpha = -0.01
+            end
+            if ImgAlpha == 0 then
+                return false
+            end
+        end)
+    end
+end
+
+if SCRIPT_MANUAL_START and not SCRIPT_SILENT_START then
+    SHOW_IMG("legacybanner.png", 3.0)
+    GRAPHICS.ANIMPOSTFX_PLAY("FocusOut", 0, 0)
+end
+-----------------------------------------------------------------------------------------------------------------------------------
+--------------- LOAD XBOX AC
+
+function SHOW_IMG(img_name, max_passed_time)----------------------------------------------Credit goes to LanceScript Reloaded (THANKS, LanceScript Team :) <3 )
+    if filesystem.exists(legacyloading.Img .. img_name) then
+        local ImgAlpha = 0
+        local IncreasedImgAlpha = 0.01
+        util.create_tick_handler(function()
+            ImgAlpha = ImgAlpha + IncreasedImgAlpha
+            if ImgAlpha > 1 then
+                ImgAlpha = 1
+            elseif ImgAlpha < 0 then 
+                ImgAlpha = 0
+                return false
+            end
+        end)
+
+        local Img = directx.create_texture(legacyloading.Img .. img_name)
+        local StartedTime = os.clock()
+        util.create_tick_handler(function()
+            directx.draw_texture(Img, 0.07, 0.05, 1.5, 4.8, 0.5, 0.5, 0, 1, 1, 1, ImgAlpha)
+            local PassedTime = os.clock() - StartedTime
+            if PassedTime > max_passed_time then
+                IncreasedImgAlpha = -0.01
+            end
+            if ImgAlpha == 0 then
+                return false
+            end
+        end)
+    end
+end
+
+if SCRIPT_MANUAL_START and not SCRIPT_SILENT_START then
+    SHOW_IMG("loadachivement.png", 3.0)
+    
+end
+----------------------------------------------COLOURS
+menu.trigger_commands("primary D3D3D3FF")
+menu.trigger_commands("focustext 000000FF")
+menu.trigger_commands("focusrighttext 000000FF")
+menu.trigger_commands("focustexture 000000FF")
+menu.trigger_commands("background 00000091")
+menu.trigger_commands("unfocusedtext E5E5E5FF")
+menu.trigger_commands("unfocusedrighttext D6D6D6FF")
+menu.trigger_commands("unfocusedtexture D6D6D6FF")
+menu.trigger_commands("hud D3D3D3FF")
+menu.trigger_commands("ar 00FFFF18")
+menu.trigger_commands("minigame D3D3D3FF")
+----------------------------------------------POSITION
+menu.trigger_commands("menux 1471")
+menu.trigger_commands("menuy 136")
+----------------------------------------------STAND HEADER
+menu.trigger_commands("header hide")
+menu.trigger_commands("headerinterval 60")
+----------------------------------------------ADRESSE BAR
+menu.trigger_commands("addressbar off")
+----------------------------------------------TABS
+menu.trigger_commands("tabs off")
+menu.trigger_commands("tabswidth 25")
+menu.trigger_commands("tabsheight 35")
+menu.trigger_commands("tabstextscale 12")
+menu.trigger_commands("tabstextxoffset -1")
+menu.trigger_commands("tabstextyoffset 8")
+menu.trigger_commands("tabsposition left")
+menu.trigger_commands("tabsalignment centre")
+menu.trigger_commands("tabsname off")
+menu.trigger_commands("tabslefticon on")
+----------------------------------------------SCROLLBAR 
+----------------------------------------------SCROLLBAR DISABLED MANUALY BEACEAUSE COMMAND NOT FOUND... 
+menu.trigger_commands("scrollbarwidth 10")
+----------------------------------------------COMMAND INFO TEXTE 
+menu.trigger_commands("commandinfotextposition bottom")
+menu.trigger_commands("infowidth 1")
+menu.trigger_commands("showsliderbehaviour off")
+menu.trigger_commands("shownonuseronly off")
+----------------------------------------------NOTIFICATIONS 
+menu.trigger_commands("notifywidth 340")
+menu.trigger_commands("notifyborder 19C1FFFF")
+menu.trigger_commands("notifyflash 19C1FFFF")
+menu.trigger_commands("notifybg 141414FF")
+----------------------------------------------COMMANDS
+menu.trigger_commands("commandtextscale 13")
+menu.trigger_commands("commandtextxoffset 0")
+menu.trigger_commands("commandtextyoffset 5")
+menu.trigger_commands("selectablenasliders on")
+menu.trigger_commands("selectabledividers on")
+----------------------------------------------BORDER
+menu.trigger_commands("borderwidth 5")
+menu.trigger_commands("border 000000FF")
+----------------------------------------------APPEARANCE MAIN 
+menu.trigger_commands("menuheight 9")
+menu.trigger_commands("listwidth 329")
+menu.trigger_commands("listheight 33")
+menu.trigger_commands("spacersize 5")
+menu.trigger_commands("smoothscroll 110")
+menu.trigger_commands("blur 1")
+---------------------------------------------- FONT
+menu.trigger_commands("smalltextscale 14")
+menu.trigger_commands("smalltextxoffset 0")
+menu.trigger_commands("smalltextyoffset 4")
+----------------------------------------------INFO TEXT
+menu.trigger_commands("infotextx 1909")
+menu.trigger_commands("infotexty 7")
+menu.trigger_commands("infoscale 13")
+----------------------------------------------INF SCRIPT
+menu.trigger_commands("infoscripthost on")
+
+-----------------------------------------------------------------------------------------------------------------------------------
+--------------- HEADER ANIMATED
+local header = directx.create_texture(header_path)
+util.create_tick_handler(function()
+	
+    if not menu.is_open() then
+		return false
+	end
+
+	for i = 1, 45 do
+		
+        util.yield(50)
+		header = directx.create_texture(get_header_path(i))
+        
+     util.yield(0)      
+	end
+    util.yield(1000)
+end)
+-----------------------------------------------------------------------------------------------------------------------------------
+--------------- DIVIDER HEADER
+menu.divider(menu.my_root(), ("Legacy Menu - Setting"))
+menu.divider(menu.my_root(), ("-------------------RGB - Border Header Color-------------------"))
+-----------------------------------------------------------------------------------------------------------------------------------
+---------------  STRING COLOR HEADER
+rect_colour = {
+	["r"] = 0/255,
+	["g"] = 0/255,
+	["b"] = 0/255,
+	["a"] = 1.0
+}
+-----------------------------------------------------------------------------------------------------------------------------------
+--------------- MENU CUSTOM LEGACY COLOR
+c = menu.colour(menu.my_root(), "Legacy Header Border Color", {"legacydxrectheader"}, "Customize the color of the theme to have a menu that looks like you.", rect_colour, true, function(colour)
+	rect_colour = colour
+end)
+-----------------------------------------------------------------------------------------------------------------------------------
+--------------- BORDER STAND RGB
+menu.divider(menu.my_root(), ("------------------- HEADER Border Rainbow-------------------"))
+menu.action(menu.my_root(), "RESET for RGB mod", {}, "How to use: Press the button to take advantage of the RGB mod below (!Only if you have the ORIGINAL Legacy menu COLOR!) !! Note: If after the **RESET for RGB MOD** the colors does not scroll, unload Stand.", function()
+    util.toast("[Legacy] - RESET HEADER BORDER for RGB mod applied.")
+
+   menu.trigger_commands("legacydxrectheadervalue 100")
+   menu.trigger_commands("legacydxrectheaderblue 180")
+    
+end)
+-----------------------------------------------------------------------------------------------------------------------------------
+--------------- RGB HEADER FONCTION
+menu.rainbow(c)
+-----------------------------------------------------------------------------------------------------------------------------------
+--------------- BORDER STAND RGB
+menu.divider(menu.my_root(), ("-------------------Border Rainbow-------------------"))
+-----------------------------------------------------------------------------------------------------------------------------------
+---------------RESET BORDER STAND FOR RGB
+menu.action(menu.my_root(), "RESET for RGB mod", {}, "How to use: Press the button to take advantage of the RGB mod below (!Only if you have the ORIGINAL Legacy menu COLOR!) !! Note: If after the **RESET for RGB MOD** the colors does not scroll, unload Stand.", function()
+    util.toast("[Legacy] - RESET BORDER for RGB mod applied.")
+
+   menu.trigger_commands("bordervalue 100")
+   menu.trigger_commands("borderblue 180")
+    
+end)
+-----------------------------------------------------------------------------------------------------------------------------------
+--------------- BORDER RAINBOW STAND
+ tw = menu.slider(menu.my_root(), ("Border Rainbow"), {"borderrainbow"}, "Border Rainbow", 0, 1000, 0, 1, function(); 		    
+    R = menu.get_value(tw)
+    st = menu.trigger_commands('borderrainbow ' .. R) 
+end)
+-----------------------------------------------------------------------------------------------------------------------------------
+--------------- DIVIDER Click UI
+menu.divider(menu.my_root(), ("-------------------Stand Setting-------------------"))
+-----------------------------------------------------------------------------------------------------------------------------------
+--------------- SEARCH MOUSE SETTINGS
+menu.action(menu.my_root(), "Mouse Support ", {}, "Shortcut to the settings for the Mouse Support.", function(on_click)
+    menu.trigger_commands("search Mouse Support")
+ end)
+-----------------------------------------------------------------------------------------------------------------------------------
+--------------- DIVIDER RESET OPTION
+menu.divider(menu.my_root(), ("-------------------Reset-------------------"))
+-----------------------------------------------------------------------------------------------------------------------
+--------------- RESET COLOR Legacy BTN
+menu.action(menu.my_root(), "Reset Border Orignal Color", {}, "Reset color to have the original color.", function()
+    util.toast("[Legacy] - Original color well applied.")
+    menu.trigger_commands("border 000000FF")
+    menu.trigger_commands("legacydxrectheaderred 0")
+    menu.trigger_commands("legacydxrectheadergreen 0")
+    menu.trigger_commands("legacydxrectheaderblue 0")
+end)
+-----------------------------------------------------------------------------------------------------------------------------------
+--------------- DIVISER FOOTER
+HC_VERSION = "V0.5"
+menu.divider(menu.my_root(), ("By XFes-OverclockedMA") .. " " .. HC_VERSION)
+
+-----------------------------------------------------------------------------------------------------------------------------------
+--------------- DRAW TEXTURE
+while true do
+	if menu.is_open() then
+		x, y, w, h = menu.get_main_view_position_and_size()
+
+---------------------LEFT BORDER
+directx.draw_rect(     
+x - (3 / 1080),-- x				
+y - (80 / 1080),-- y 
+3 / 1080,-- width				
+80 / 1080,-- height		 
+rect_colour-- colour		 
+)
+---------------------TOP BORDER
+directx.draw_rect(   
+x - (3 / 1080),-- x				
+y - (82 / 1080),-- y 
+191 / 1080,-- width				 
+5 / 1080,-- height		 
+rect_colour-- colour	 
+)
+---------------------RIGHT BORDER
+directx.draw_rect(
+x + (185 / 1080),-- x
+y - (80 / 1080),-- y
+3 / 1080,-- width
+80 / 1080,-- height
+rect_colour-- colour
+)
+
+--------------------- HEADER 
+directx.draw_texture(header, 1, (76.5 / 1080) / 2, 0, 0, x , y - 76.5 / 1080, 0, 1, 1, 1, 1)
+	end
+	util.yield()
+end
+
+

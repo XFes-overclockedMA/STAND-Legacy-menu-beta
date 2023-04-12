@@ -1,0 +1,32 @@
+🦖 Update 0.2 :
+[x]->The theme has been adapted in .LUA so that you can keep your profile! ✅
+(it's the same interface just instead of having a profile.txt we have a script.lua)🔥🧨
+
+🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧
+
+🐉 Update 0.3 :
+[x]->Adding Loading screen starting the lua its very cool🔥🧨
+
+
+🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧
+🐍 MAJOR Update 0.4 :
+Minor FEATURE :
+
+[x]->Shortcut Mousse Support Adding ->(at the request of @Wolfgang)🔥🧨
+[x]-> Change Color Header Border  👌
+
+MAJOR Update:
+
+[x]->Centralization of resource files for my JTAG/RGH themes👌
+⚠️ It will save you from having 300 files in your luascript/resource file, all my themes will be in a single file.)😉
+(Now SVT and Legacy are in the same file)✅
+
+[x]->you're tired of always having to change your headers in Header/Custom Header ✅
+ when you want to change the theme now Legacy Menu Beta has its own header file, no more hassle! ✅
+Change theme your legacy header will still be there when you want to use Legacy theme ! ✅
+
+🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧
+Update 0.5 :
+[x]->Retour Return of the tabs bar in top 👌
+[x]->Added rainbow header border 🧨
+[x]->Added rainbow border🔥

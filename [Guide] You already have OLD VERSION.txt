@@ -1,0 +1,43 @@
+⚠️⚠️-> If you have v0.4 then just follow this step to install v0.5  ⚠️⚠️
+
+💎->STEP 1 Replace OLD .PLUTO by .NEW PLATO
+
+🚧🚧🚧🚧🚧🚧🚧
+✨-->STEP 2: Enjoy your theme Update Finish☀️
+
+
+
+-----------------------------------
+⚠️⚠️ -> If you already have the correct OLD VERSION  choose UNISTALL METHOD:
+
+----------------------------------->SEMI-AUTOMATIC UNISTALL
+💎->STEP 1 Extract Unistall-V0.2.bat and Launch
+
+🚧🚧🚧🚧🚧🚧🚧
+🐍-->STEP 2 : ⚠️If your "Custom Header" folder contains the legacy menu Header then delete it and replace with an empty "Custom Header" file⚠️
+
+🚧🚧🚧🚧🚧🚧🚧
+🦖--->STEP 3 : Drop New .PLUTO in the \AppData\Roaming\Stand\Lua Scripts
+
+🚧🚧🚧🚧🚧🚧🚧
+🐉---->STEP 4 : Drop #xfes-lib-theme folder in the \AppData\Roaming\Stand\Lua Scripts\resources 
+->⚠️⚠️ If the #xfes-lib-theme folder is already present in your folders then drop legacymenu in:   \AppData\Roaming\Stand\Lua Scripts\resources\#xfes-lib-theme folder ⚠️⚠️
+
+🚧🚧🚧🚧🚧🚧🚧
+✨----->STEP 5: Enjoy your theme Update Finish☀️
+
+-----------------------------------> MANUAL UNISTALL
+💎->STEP 1 Delete OLD Lua and Drop New .PLUTO in the \AppData\Roaming\Stand\Lua Scripts
+
+🚧🚧🚧🚧🚧🚧🚧
+🐍-->STEP 2 : Delete the old legacymenu file in : \AppData\Roaming\Stand\Lua Scripts\resources 
+
+🚧🚧🚧🚧🚧🚧🚧
+🦖--->STEP 3 : Drop #xfes-lib-theme folder in the \AppData\Roaming\Stand\Lua Scripts\resources 
+->⚠️⚠️ If the #xfes-lib-theme folder is already present in your folders then drop legacymenu in:   \AppData\Roaming\Stand\Lua Scripts\resources\#xfes-lib-theme folder ⚠️⚠️
+
+🚧🚧🚧🚧🚧🚧🚧
+🐉---->STEP 4: ⚠️If your "Custom Header" folder contains the legacy menu Header then delete it and replace with an empty "Custom Header" file⚠️
+
+🚧🚧🚧🚧🚧🚧🚧
+✨----->STEP 5: Enjoy your theme Update Finish☀️
