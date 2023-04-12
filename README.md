@@ -1,10 +1,14 @@
 # STAND-Legacy-menu-beta
 This Legacy menu beta THEME for STAND
 
+⚠️⚠️THIS CODE IS OPEN SOURCE PROVIDED YOU ASK ME PERMISSION⚠️⚠️
+
 🚧🚧🚧🚧🚧🚧
+
 Powered by :  разогнанный = OverclockedMA / @разогнанный#9036 ✅
 
 🚧🚧🚧🚧🚧🚧
+
 💎 You too are nostalgic for the era of GTA 360 mods so I offer you this theme which aims to best resemble the original menu (Legacy menu beta) on xbox 360 JTAG.🔥🧨
 
 🚧🚧🚧🚧🚧🚧
